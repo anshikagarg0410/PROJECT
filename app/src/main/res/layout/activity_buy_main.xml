@@ -38,6 +38,7 @@
         android:layout_marginTop="32dp"
         android:text="What do you wish to buy?"
         android:textColor="#7B3F00"
+        android:textStyle="bold"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -53,7 +54,10 @@
         android:clickable="true"
         android:focusable="true"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:backgroundTint="#D85B53"
+        app:strokeColor="#D85B53"
+        app:strokeWidth="2dp"/>
 
     <Button
         android:id="@+id/imageView7"
@@ -65,7 +69,10 @@
         android:clickable="true"
         android:focusable="true"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:backgroundTint="#D85B53"
+        app:strokeColor="#D85B53"
+        app:strokeWidth="2dp"/>
 
 
     <!-- Grid Layout for Categories -->
@@ -90,8 +97,8 @@
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:layout_margin="8dp"
-            app:cardBackgroundColor="#ECD7B2"
-            app:cardCornerRadius="8dp"
+            app:cardBackgroundColor="#80ECD7B2"
+            app:cardCornerRadius="24dp"
             app:cardElevation="4dp">
 
             <LinearLayout
@@ -99,7 +106,8 @@
                 android:layout_height="match_parent"
                 android:gravity="center"
                 android:orientation="vertical"
-                app:cardBackgroundColor="#ECD7B2">
+                app:cardBackgroundColor="#ECD7B2"
+                android:background="@drawable/button_border">
 
                 <Button
                     android:id="@+id/Gift"
@@ -107,7 +115,10 @@
                     android:layout_height="60dp"
                     android:background="@drawable/gift"
                     android:clickable="true"
-                    android:focusable="true"/>
+                    android:focusable="true"
+                    app:backgroundTint="#D85B53"
+                    app:strokeColor="#D85B53"
+                    app:strokeWidth="2dp"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -115,7 +126,8 @@
                     android:layout_marginTop="10dp"
                     android:text="GIFT"
                     android:textColor="#7B3F00"
-                    android:textSize="18sp" />
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -126,8 +138,8 @@
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:layout_margin="8dp"
-            app:cardBackgroundColor="#ECD7B2"
-            app:cardCornerRadius="8dp"
+            app:cardBackgroundColor="#80ECD7B2"
+            app:cardCornerRadius="24dp"
             app:cardElevation="4dp">
 
             <LinearLayout
@@ -135,7 +147,8 @@
                 android:layout_height="match_parent"
                 android:gravity="center"
                 android:orientation="vertical"
-                app:cardBackgroundColor="#ECD7B2">
+                app:cardBackgroundColor="#ECD7B2"
+                android:background="@drawable/button_border">
 
                 <Button
                     android:id="@+id/personalized"
@@ -143,7 +156,10 @@
                     android:layout_height="60dp"
                     android:background="@drawable/premade"
                     android:clickable="true"
-                    android:focusable="true" />
+                    android:focusable="true"
+                    app:backgroundTint="#D85B53"
+                    app:strokeColor="#D85B53"
+                    app:strokeWidth="2dp"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -151,7 +167,8 @@
                     android:layout_marginTop="10dp"
                     android:text="PERSONALIZED"
                     android:textColor="#7B3F00"
-                    android:textSize="18sp" />
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -162,15 +179,16 @@
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:layout_margin="8dp"
-            app:cardBackgroundColor="#ECD7B2"
-            app:cardCornerRadius="8dp"
+            app:cardBackgroundColor="#80ECD7B2"
+            app:cardCornerRadius="24dp"
             app:cardElevation="4dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:background="@drawable/button_border">
 
                 <Button
                     android:id="@+id/premade"
@@ -178,7 +196,10 @@
                     android:layout_height="60dp"
                     android:background="@drawable/personalized"
                     android:clickable="true"
-                    android:focusable="true" />
+                    android:focusable="true"
+                    app:backgroundTint="#D85B53"
+                    app:strokeColor="#D85B53"
+                    app:strokeWidth="2dp"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -186,7 +207,8 @@
                     android:layout_marginTop="10dp"
                     android:text="PRE-MADE"
                     android:textColor="#7B3F00"
-                    android:textSize="18sp" />
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -197,15 +219,16 @@
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:layout_margin="8dp"
-            app:cardBackgroundColor="#ECD7B2"
-            app:cardCornerRadius="8dp"
+            app:cardBackgroundColor="#80ECD7B2"
+            app:cardCornerRadius="24dp"
             app:cardElevation="4dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:background="@drawable/button_border">
 
                 <Button
                     android:id="@+id/trending"
@@ -213,7 +236,10 @@
                     android:layout_height="60dp"
                     android:background="@drawable/trending"
                     android:clickable="true"
-                    android:focusable="true" />
+                    android:focusable="true"
+                    app:backgroundTint="#D85B53"
+                    app:strokeColor="#D85B53"
+                    app:strokeWidth="2dp"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -221,7 +247,11 @@
                     android:layout_marginTop="10dp"
                     android:text="MOST LIKED"
                     android:textColor="#7B3F00"
-                    android:textSize="18sp" />
+                    android:textSize="18sp"
+                    app:backgroundTint="#D85B53"
+                    app:strokeColor="#D85B53"
+                    app:strokeWidth="2dp"
+                    android:textStyle="bold" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
     </GridLayout>
