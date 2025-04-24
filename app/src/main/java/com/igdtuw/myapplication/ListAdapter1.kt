@@ -14,7 +14,7 @@ class ListAdapter1(context: Context, private val dataArrayList: ArrayList<ListDa
     ArrayAdapter<ListData1>(context, R.layout.list_item, dataArrayList) {
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
-        val view = convertView ?: LayoutInflater.from(context).inflate(R.layout.list_item, parent, false)
+        val view = convertView ?: LayoutInflater.from(context).inflate(R.layout.list_item1, parent, false)
 
         val listImage = view.findViewById<ImageView>(R.id.imageWorkshop)
         val listTitlePrice = view.findViewById<TextView>(R.id.textWorkshopDetails)
