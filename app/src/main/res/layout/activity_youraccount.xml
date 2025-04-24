@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@drawable/ceramifybg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="23dp">
+
+
+
+        <!-- Back Icon (SVG) -->
+        <ImageView
+            android:id="@+id/backIcon"
+            android:layout_width="34dp"
+            android:layout_height="29dp"
+            android:src="@drawable/back_ic"
+            app:tint="@color/brown"
+            app:contentDescription="Back" />
+
+        <!-- Space -->
+        <Space
+            android:layout_width="1dp"
+            android:layout_height="wrap_content" />
+
+        <!-- Center Logo (PNG) -->
+
+        <!-- Space -->
+        <ImageView
+            android:id="@+id/logoImage"
+            android:layout_width="1dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:contentDescription="Ceramify Logo"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ceramifyname" />
+
+        <Space
+            android:layout_width="1dp"
+            android:layout_height="wrap_content" />
+
+        <!-- Home Icon (Vector XML) -->
+        <ImageView
+            android:id="@+id/homeIcon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/home_ic"
+            app:tint="@color/brown"
+            android:contentDescription="Home" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/dashboardTitle"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="YOUR ACCOUNT"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:background="@drawable/base_rectangle"
+        android:textColor="@color/brown"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="2dp"
+        android:paddingBottom="1dp"
+        android:textAlignment="center"/>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/profile_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/profilepic"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        app:shapeAppearanceOverlay="@style/CircleImageView" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/baserectop"
+        android:layout_margin="20dp"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Full Name: Ramesh Kumar"
+            android:textSize="16sp"
+            android:textColor="@color/dbrown"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone Number: 98765XXXXX"
+            android:textSize="16sp"
+            android:textColor="@color/dbrown" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email Address: ramesh.potter@gmail.com"
+            android:textSize="16sp"
+            android:textColor="@color/dbrown" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Shop Name: Ramesh Handmade Ceramics"
+            android:textSize="16sp"
+            android:textColor="@color/dbrown" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/baserectop"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Products Listed: 15"
+            android:textSize="16sp"
+            android:textColor="@color/dbrown"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Orders Received: 47"
+            android:textSize="16sp"
+            android:textColor="@color/dbrown" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rating: ⭐ 4.6 / 5"
+            android:textSize="16sp"
+            android:textColor="@color/dbrown" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Return Rate: 2%"
+            android:textSize="16sp"
+            android:textColor="@color/dbrown" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/baserectop"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Account Holder Name: Ramesh Kumar"
+            android:textSize="16sp"
+            android:textColor="@color/dbrown"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bank Name: State Bank of India"
+            android:textSize="16sp"
+            android:textColor="@color/dbrown" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Account Number: XXXX XXXX 1234"
+            android:textSize="16sp"
+            android:textColor="@color/dbrown" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="IFSC Code: SBIN0001234"
+            android:textSize="16sp"
+            android:textColor="@color/dbrown" />
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>
