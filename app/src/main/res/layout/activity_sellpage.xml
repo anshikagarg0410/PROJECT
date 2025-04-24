@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".sellpage"
+    android:background="@drawable/ceramifybg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="23dp">
+
+
+
+        <!-- Back Icon (SVG) -->
+        <ImageView
+            android:id="@+id/backIcon"
+            android:layout_width="34dp"
+            android:layout_height="29dp"
+            android:src="@drawable/back_ic"
+            app:tint="@color/brown"
+            app:contentDescription="Back" />
+
+        <!-- Space -->
+        <Space
+            android:layout_width="1dp"
+            android:layout_height="wrap_content" />
+
+        <!-- Center Logo (PNG) -->
+
+        <!-- Space -->
+        <ImageView
+            android:id="@+id/logoImage"
+            android:layout_width="1dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:contentDescription="Ceramify Logo"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ceramifyname" />
+
+        <Space
+            android:layout_width="1dp"
+            android:layout_height="wrap_content" />
+
+        <!-- Home Icon (Vector XML) -->
+        <ImageView
+            android:id="@+id/homeIcon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/home_ic"
+            app:tint="@color/brown"
+            android:contentDescription="Home" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/dashboardTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WELCOME TO YOUR DASHBOARD!!"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/brown"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="2dp"
+        android:paddingBottom="1dp"
+        android:textAlignment="center"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="26dp"/>
+
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="3"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="160dp"
+            android:layout_height="100dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/base_rectangle"
+            android:layout_margin="12dp"
+            android:padding="16dp">
+
+            <TextView
+                android:text="ORDERS\nCOMPLETED"
+                android:textColor="@color/brown"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+
+            <TextView
+                android:text="67"
+                android:id="@+id/ordcompleted"
+                android:textColor="@color/brown"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="160dp"
+            android:layout_height="100dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/base_rectangle"
+            android:layout_margin="12dp"
+            android:padding="16dp">
+
+            <TextView
+                android:text="ORDERS\nPENDING"
+                android:textColor="@color/brown"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+
+            <TextView
+                android:text="15"
+                android:id="@+id/yourworkshops"
+                android:textColor="@color/brown"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="160dp"
+            android:layout_height="100dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:id="@+id/collabbutton"
+            android:background="@drawable/base_rectangle"
+            android:layout_margin="12dp"
+            android:padding="6dp">
+
+            <ImageView
+                android:id="@+id/collabicon"
+                android:layout_width="95dp"
+                android:layout_height="50dp"
+                android:src="@drawable/collab_ic"
+                app:tint="@color/brown"
+                app:contentDescription="collab" />
+
+
+            <TextView
+                android:text="YOUR\nCOLLABORATIONS"
+                android:id="@+id/yourcollabs"
+                android:textColor="@color/brown"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="160dp"
+            android:layout_height="100dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/base_rectangle"
+            android:layout_margin="12dp"
+            android:padding="6dp">
+
+            <ImageView
+                android:id="@+id/workshopicon"
+                android:layout_width="95dp"
+                android:layout_height="50dp"
+                android:src="@drawable/workshop_ic"
+                app:tint="@color/brown"
+                app:contentDescription="workshopicon" />
+
+
+            <TextView
+                android:text="YOUR\nWORKSHOPS"
+                android:id="@+id/yourworkshop"
+                android:textColor="@color/brown"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:text="YOUR ORDERS"
+            android:id="@+id/navigatetoyourorders"
+            android:background="@drawable/base_rectangle"
+            android:layout_margin="12dp"
+            android:padding="6dp"
+            android:width="160dp"
+            android:height="40dp"
+            android:textColor="@color/brown"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <TextView
+            android:text="YOUR ACCOUNT"
+            android:id="@+id/navigatetoyouraccount"
+            android:background="@drawable/base_rectangle"
+            android:layout_margin="12dp"
+            android:padding="6dp"
+            android:width="160dp"
+            android:height="40dp"
+            android:textColor="@color/brown"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </GridLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <!-- List Container -->
+        <LinearLayout
+            android:id="@+id/listContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <!-- Example Item 1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp"
+                android:background="@drawable/baserectop"
+                android:layout_marginBottom="8dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/order1"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/order1"
+                    android:scaleType="centerCrop"
+                    app:shapeAppearanceOverlay="@style/RoundedCornerImageView"
+                    />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="7dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Gift Set"
+                        android:textSize="17sp"
+                        android:textColor="@color/dbrown"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Price: Rs. 249.00"
+                        android:textColor="@color/brown"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Stock: 13"
+                        android:textColor="@color/brown"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Description:Elegant red ceramic set with cups and tray"
+                        android:textColor="@color/brown"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:backgroundTint="@color/brown"
+                    android:text="Edit"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+
+
+            <!-- Example Item 2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp"
+                android:background="@drawable/baserectop"
+                android:layout_marginBottom="8dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/order2"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/order2"
+                    android:scaleType="centerCrop"
+                    app:shapeAppearanceOverlay="@style/RoundedCornerImageView"
+                    />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="7dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Cute Mug Set"
+                        android:textSize="17sp"
+                        android:textColor="@color/dbrown"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Price: Rs. 239.00"
+                        android:textColor="@color/brown"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Stock: 8"
+                        android:textColor="@color/brown"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Description:Adorable heart-themed red mugs"
+                        android:textColor="@color/brown"
+                        android:textStyle="bold"/>
+
+
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:backgroundTint="@color/brown"
+                    android:text="Edit"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+
+
+            <!-- Example Item 3 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp"
+                android:background="@drawable/baserectop"
+                android:layout_marginBottom="8dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/order3"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/order3"
+                    android:scaleType="centerCrop"
+                    app:shapeAppearanceOverlay="@style/RoundedCornerImageView"
+                    />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="7dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Flower Design Crockery"
+                        android:textSize="17sp"
+                        android:textColor="@color/dbrown"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/brown"
+                        android:textStyle="bold"
+                        android:text="Price: Rs. 349.00" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Stock: 18"
+                        android:textColor="@color/brown"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Description:Vibrant hand-painted ceramic bowl"
+                        android:textColor="@color/brown"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:backgroundTint="@color/brown"
+                    android:text="Edit"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+    <!-- Button to add a new product -->
+    <Button
+        android:id="@+id/add_product_button"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="Add More Products"
+        android:textColor="@color/white"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/dbrown"/>
+
+
+
+</LinearLayout>
+
+
+
+

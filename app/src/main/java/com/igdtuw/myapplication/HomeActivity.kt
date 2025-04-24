@@ -41,6 +41,18 @@ class HomeActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        val sellLayout = findViewById<LinearLayout>(R.id.sellLayout)
+        sellLayout.setOnClickListener {
+            val intent = Intent(this, sellpage::class.java)
+            startActivity(intent)
+        }
+
+        val collabsLayout = findViewById<LinearLayout>(R.id.collabsLayout)
+        collabsLayout.setOnClickListener {
+            val intent = Intent(this, yourcollabs::class.java)
+            startActivity(intent)
+        }
+
 
     }
 }
