@@ -25,6 +25,25 @@
             android:name=".loginSignUpActivity"
             android:exported="false" />
         <activity
+            android:name=".CourseMainActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".DetailedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DetailedActivity1"
+            android:exported="false" />
+        <activity
+            android:name=".DetailedActivityPlatinum"
+            android:exported="false" />
+        <activity
+            android:name=".WorkshopMainActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".WorkshopMainActivity"
+            android:exported="false" />
+
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
