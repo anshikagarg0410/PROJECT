@@ -35,8 +35,8 @@ class HomeActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        val buymainLayout = findViewById<LinearLayout>(R.id.buyLayout)
-        buymainLayout.setOnClickListener {
+        val buyLayout = findViewById<LinearLayout>(R.id.buyLayout)
+        buyLayout.setOnClickListener {
             val intent = Intent(this, BuyMainActivity::class.java)
             startActivity(intent)
         }
