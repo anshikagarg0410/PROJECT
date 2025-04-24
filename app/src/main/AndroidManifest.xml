@@ -15,6 +15,22 @@
         <activity
             android:name=".HomeActivity"
             android:exported="false" />
+        <activity
+            android:name=".BuyMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PersonalizedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GiftActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TrendingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PremadeActivity"
+            android:exported="false" />
+
         <activity android:name=".ShopsnearActivity"
             android:exported="false"/>
         <activity android:name=".MyPage2"
