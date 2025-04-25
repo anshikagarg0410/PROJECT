@@ -17,9 +17,13 @@ class youraccount : AppCompatActivity() {
 
         val backIcon = findViewById<ImageView>(R.id.backIcon)
         backIcon.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, sellpage::class.java)
             startActivity(intent)
-            finish() // optional: closes current activity
+        }
+        val homeIcon = findViewById<ImageView>(R.id.homeIcon)
+        homeIcon.setOnClickListener {
+            val intent = Intent(this, HomeActivity::class.java)
+            startActivity(intent)
         }
     }
 

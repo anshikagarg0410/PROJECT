@@ -22,12 +22,12 @@
         app:layout_constraintVertical_bias="0.025"/>
     <ImageView
         android:id="@+id/icon2"
-        android:layout_width="60dp"
-        android:layout_height="56dp"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
         android:clickable="true"
         android:focusable="true"
         android:foregroundGravity="right"
-        android:src="@drawable/ic_launcher_arrow_foreground"
+        android:src="@drawable/baseline_arrow_back_ios_24"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.045"
@@ -36,12 +36,13 @@
         app:layout_constraintVertical_bias="0.038"/>
     <ImageView
         android:id="@+id/icon1"
-        android:layout_width="48dp"
-        android:layout_height="43dp"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
         android:clickable="true"
         android:focusable="true"
         android:foregroundGravity="left"
-        android:src="@drawable/homelogo"
+        android:src="@drawable/home_ic"
+        android:tint="@color/brown"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.956"

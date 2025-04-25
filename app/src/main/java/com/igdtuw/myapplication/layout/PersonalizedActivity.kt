@@ -27,6 +27,12 @@ class PersonalizedActivity : AppCompatActivity() {
         binding.submitBtn.setOnClickListener {
             Toast.makeText(this, "Successfully submited!!", Toast.LENGTH_SHORT).show()
         }
+        binding.arrowBtn.setOnClickListener {
+            startActivity(Intent(this, BuyMainActivity::class.java))
+        }
+        binding.homeBtn.setOnClickListener {
+            startActivity(Intent(this, HomeActivity::class.java))
+        }
 
 
     }

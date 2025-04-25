@@ -34,6 +34,12 @@ class GiftActivity : AppCompatActivity() {
         }
 
 
+        binding.arrowBtn.setOnClickListener {
+            startActivity(Intent(this, BuyMainActivity::class.java))
+        }
+        binding.homeBtn.setOnClickListener {
+            startActivity(Intent(this, HomeActivity::class.java))
+        }
     }
 
 }

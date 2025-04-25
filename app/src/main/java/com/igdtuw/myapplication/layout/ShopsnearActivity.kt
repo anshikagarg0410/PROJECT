@@ -32,10 +32,12 @@ class ShopsnearActivity : AppCompatActivity() {
         val icon1=findViewById<ImageView>(R.id.icon1)
         val icon2=findViewById<ImageView>(R.id.icon2)
         icon1.setOnClickListener{
-            Toast.makeText(this,"icon1 clicked",Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, HomeActivity::class.java)
+            startActivity(intent)
         }
         icon2.setOnClickListener {
-            Toast.makeText(this,"icon2 clicked",Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, HomeActivity::class.java)
+            startActivity(intent)
         }
         val myCard=findViewById<CardView>(R.id.myCard)
         val cardText=findViewById<TextView>(R.id.cardText)

@@ -1,5 +1,6 @@
 package com.igdtuw.myapplication
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Patterns
 import android.widget.ArrayAdapter
@@ -128,6 +129,10 @@ class DetailedActivity : AppCompatActivity() {
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             view.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
+        }
+
+        binding.imageView3.setOnClickListener {
+            startActivity(Intent(this, CourseMainActivity2::class.java))
         }
     }
 

@@ -32,11 +32,22 @@ class sellpage : AppCompatActivity() {
             startActivity(intent)
         }
 
-        val collabLayout = findViewById<LinearLayout>(R.id.collabbutton)
-        collabLayout.setOnClickListener {
+        val backicon = findViewById<ImageView>(R.id.backIcon)
+        backicon.setOnClickListener {
+            val intent = Intent(this, HomeActivity::class.java)
+            startActivity(intent)
+        }
+        val homeIcon = findViewById<ImageView>(R.id.homeIcon)
+        homeIcon.setOnClickListener {
+            val intent = Intent(this, HomeActivity::class.java)
+            startActivity(intent)
+        }
+        val CollabIcon = findViewById<LinearLayout>(R.id.collabbutton)
+        CollabIcon.setOnClickListener {
             val intent = Intent(this, yourcollabs::class.java)
             startActivity(intent)
         }
+
 
 
 

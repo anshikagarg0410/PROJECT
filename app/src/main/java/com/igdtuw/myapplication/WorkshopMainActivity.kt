@@ -59,5 +59,13 @@ class WorkshopMainActivity : AppCompatActivity() {
             intent.putExtra("workshopName", nameList[position])
             startActivity(intent)
         }
+        binding.imageView2.setOnClickListener {
+            val intent = Intent(this, HomeActivity::class.java)
+            startActivity(intent)
+        }
+        binding.imageView3.setOnClickListener {
+            val intent = Intent(this, HomeActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

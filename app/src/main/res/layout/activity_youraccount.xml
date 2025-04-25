@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity"
+    tools:context=".youraccount"
     android:background="@drawable/ceramifybg">
 
     <LinearLayout
@@ -22,8 +22,8 @@
         <!-- Back Icon (SVG) -->
         <ImageView
             android:id="@+id/backIcon"
-            android:layout_width="34dp"
-            android:layout_height="29dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
             android:src="@drawable/back_ic"
             app:tint="@color/brown"
             app:contentDescription="Back" />
@@ -52,8 +52,8 @@
         <!-- Home Icon (Vector XML) -->
         <ImageView
             android:id="@+id/homeIcon"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
             android:src="@drawable/home_ic"
             app:tint="@color/brown"
             android:contentDescription="Home" />

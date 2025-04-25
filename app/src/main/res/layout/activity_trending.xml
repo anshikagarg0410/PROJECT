@@ -6,7 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    android:padding="16dp">
+    android:padding="16dp"
+    tools:context=".TrendingActivity">
 
 
     <ImageView
@@ -152,28 +153,29 @@
 
     <ImageView
         android:id="@+id/arrowBtn"
-        android:layout_width="35dp"
-        android:layout_height="28dp"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
         android:layout_marginStart="12dp"
         android:layout_marginTop="8dp"
         android:clickable="true"
         android:focusable="true"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/arrow_image"
+        app:srcCompat="@drawable/baseline_arrow_back_ios_24"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageView
         android:id="@+id/homeBtn"
-        android:layout_width="44dp"
-        android:layout_height="26dp"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="12dp"
         android:clickable="true"
         android:focusable="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/home_image"
+        app:srcCompat="@drawable/home_ic"
+        app:tint="@color/brown"
         tools:ignore="SpeakableTextPresentCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

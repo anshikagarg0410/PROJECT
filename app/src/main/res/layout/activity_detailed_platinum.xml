@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/ceramify2"
-    tools:context=".DetailedActivity"
+    tools:context=".DetailedActivityPlatinum"
     android:fillViewport="true">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -23,7 +23,7 @@
             android:contentDescription="Back"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:srcCompat="@drawable/ic_launcher_foreground1"
+            app:srcCompat="@drawable/baseline_arrow_back_ios_24"
             />
 
         <!-- Course Info Card -->

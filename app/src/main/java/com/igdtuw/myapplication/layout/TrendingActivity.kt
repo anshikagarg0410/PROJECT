@@ -28,6 +28,12 @@ class TrendingActivity : AppCompatActivity() {
         binding.addToCartBtn2.setOnClickListener {
             Toast.makeText(this, "Added in cart!!", Toast.LENGTH_SHORT).show()
         }
+        binding.arrowBtn.setOnClickListener {
+            startActivity(Intent(this, BuyMainActivity::class.java))
+        }
+        binding.homeBtn.setOnClickListener {
+            startActivity(Intent(this, HomeActivity::class.java))
+        }
 
 
     }

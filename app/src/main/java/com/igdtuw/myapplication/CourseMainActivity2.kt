@@ -72,5 +72,11 @@ class CourseMainActivity2 : AppCompatActivity() {
 
             startActivity(intent)
         }
+        binding.imageView2.setOnClickListener {
+            startActivity(Intent(this, HomeActivity::class.java))
+        }
+        binding.imageView4.setOnClickListener {
+            startActivity(Intent(this, HomeActivity::class.java))
+        }
     }
 }

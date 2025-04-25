@@ -37,5 +37,12 @@ class BuyMainActivity : AppCompatActivity() {
         binding.personalized.setOnClickListener {
             startActivity(Intent(this, PersonalizedActivity::class.java))
         }
+        binding.imageView6.setOnClickListener {
+            startActivity(Intent(this, HomeActivity::class.java))
+        }
+        binding.imageView7.setOnClickListener {
+            startActivity(Intent(this, HomeActivity::class.java))
+        }
+
     }
 }

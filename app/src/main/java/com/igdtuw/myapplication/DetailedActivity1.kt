@@ -1,6 +1,7 @@
 package com.igdtuw.myapplication
 
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
@@ -77,6 +78,11 @@ class DetailedActivity1 : AppCompatActivity() {
             } else {
                 Toast.makeText(this, "Please fill in all details", Toast.LENGTH_SHORT).show()
             }
+        }
+        val backIcon = findViewById<ImageView>(R.id.imageView3)
+        backIcon.setOnClickListener {
+            val intent = Intent(this, CourseMainActivity2::class.java)
+            startActivity(intent)
         }
     }
 }

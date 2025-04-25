@@ -46,23 +46,23 @@
 
     <Button
         android:id="@+id/imageView6"
-        android:layout_width="26dp"
-        android:layout_height="36dp"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="32dp"
-        android:background="@drawable/arrow_image"
+        android:background="@drawable/baseline_arrow_back_ios_24"
         android:clickable="true"
         android:focusable="true"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:backgroundTint="#D85B53"
-        app:strokeColor="#D85B53"
+        app:backgroundTint="@color/brown"
+        app:strokeColor="@color/brown"
         app:strokeWidth="2dp"/>
 
     <Button
         android:id="@+id/imageView7"
-        android:layout_width="34dp"
-        android:layout_height="42dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="28dp"
         android:background="@drawable/home_image"
@@ -70,8 +70,8 @@
         android:focusable="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:backgroundTint="#D85B53"
-        app:strokeColor="#D85B53"
+        app:backgroundTint="@color/brown"
+        app:strokeColor="@color/brown"
         app:strokeWidth="2dp"/>
 
 

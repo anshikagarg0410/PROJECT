@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.firestore.FirebaseFirestore
+import android.content.Intent
 
 class DetailedActivityPlatinum : AppCompatActivity() {
 
@@ -76,6 +77,11 @@ class DetailedActivityPlatinum : AppCompatActivity() {
             } else {
                 Toast.makeText(this, "Please fill in all details", Toast.LENGTH_SHORT).show()
             }
+        }
+        val backIcon = findViewById<ImageView>(R.id.imageView3)
+        backIcon.setOnClickListener {
+            val intent = Intent(this, CourseMainActivity2::class.java)
+            startActivity(intent)
         }
     }
 }
